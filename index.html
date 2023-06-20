@@ -11,6 +11,7 @@
     <header id="header">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -116,7 +117,29 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>In JavaScript, to declare a variable, we use the var keyword. After the var keyword, we give the variable a name. This name must be unique because it is how we will reference the information stored in the variable in our code.</li>
+          <li>Finally, we use an assignment operator = to assign the specific data that we want stored in our variable. Example var shape = "circle"</li>
+          <li>All strings are surrounded by quotation marks. Note that each line of JavaScript code ends with a semicolon.</li>
+          <li>To access the string "HTML, CSS, Git, JavaScript", we can simply refer to the variable's name, topics. To see this in action, on the next line in your script.js file, type the following: console.log(topics); Here, we've added the console.log method to the file. We can use the console.log method to output a message to the web console by adding an argument. In this case, console.log will output the value of topics to the web console because we've added it as an argument inside the parentheses.</li>
+          <li>Note that whereas the style.css file is linked within the head element, the script.js file is linked within the body element.</li>
+          <li>The strict equality operator (===) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal.</li>
+          <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way.</li>
+          <li>To create an array, we declare a variable in the same way that we declared a variable with only one data item. That is, we use var and then give the variable a name. However, instead of assigning the variable to a single value, we assign the variable to a group of values. Example var shapes = ["triangle", "square", "pentagon", "circle"]; </li>
+          <li>Arrays are not limited to contain only a single type of data. A single array can store different types of data, such as strings, numbers, and so on. Example var studentInfo = ["Lu", 54, true];</li>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over. Developers must use another statement, such as the conditional if statement that we just learned, to interrupt the control flow by executing a block of code a specific number of times.</li>
+          <li>By using a for loop, we can tell the computer to go through each of the shapes in our array and log them to the console until there are no shapes left. In order to use the for loop, we need the shape's index and the array's length. The array length is important because the for loop needs to know how many times the code will run until there are no items left in the array. We can find the length of an array by using a built-in property of an array, appropriately named length.</li>
+          <li>A for loop contains the following three important statements: The first statement determines the starting point for our loop. Since we want to start at the beginning of the array, we declare a variable x and give it a value of 0 (because the first index of an array is always 0), as shown in the following line of code: var x = 0;
+            The second statement is the condition. As long as the number in the variable x is less than the length of the array, the loop will keep running. This will allow the loop to execute one time for each item in the array. We use the length built-in array property on our shapes array to express that condition, as shown in the following line of code: x ,less than, shapes.length;
+            The final statement is what allows the array to iterate over each item. Since indices follow a predictable pattern, we know the number increases by 1 each time. The code x++ is a shortcut way of writing x+1. Now every time the code loops, x will increase by 1, as shown in the following line of code: x++;</li>
+          <li>A for loop starts with for. So far, our for loop looks like the following code: for(var x = 0; x ,less than, shapes.length; x++) {
+             // code block
+            }</li>
+          <li>Finally, we put the code that we want to be executed for each loop inside curly brackets. In our case, we want each of the items in the shapes array to be logged in the console. In place of an actual index number, however, we can add the variable x from our for loop. Now, each time the code runs, x will increase by 1 and the next array item will log to the console. The following code shows how this is done:
+
+            for(var x = 0; x ,less than, shapes.length; x++) {
+             console.log(shapes[x]);
+            }</li>
+          <li></li>
         </ul>
       </section>
     </main>
@@ -124,5 +147,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
